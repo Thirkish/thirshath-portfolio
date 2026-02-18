@@ -2,11 +2,17 @@ import { motion } from "framer-motion";
 
 const skills = [
   { name: "Blender", icon: "🎨" },
-  { name: "Maya", icon: "🖥️" },
-  { name: "After Effects", icon: "🎬" },
-  { name: "Photoshop", icon: "🖌️" },
+  { name: "Unreal Engine", icon: "🎮" },
+  { name: "Unity", icon: "🕹️" },
+  { name: "3ds Max", icon: "🖥️" },
+  { name: "Godot", icon: "🤖" },
   { name: "ZBrush", icon: "🗿" },
   { name: "Substance Painter", icon: "🎭" },
+  { name: "After Effects", icon: "🎬" },
+  { name: "Photoshop", icon: "🖌️" },
+  { name: "C#", icon: "💻" },
+  { name: "AR/VR/MR", icon: "🥽" },
+  { name: "Marvelous Designer", icon: "👗" },
 ];
 
 const AboutSection = () => {
@@ -24,9 +30,10 @@ const AboutSection = () => {
         <div className="w-16 h-1 bg-primary rounded mb-8" />
 
         <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mb-12">
-          I'm a passionate 3D artist specializing in animation and visual effects. With a keen eye for detail and a love
-          for storytelling, I bring characters and environments to life through cutting-edge 3D tools. From modeling and
-          texturing to lighting and compositing, I craft visuals that captivate and inspire.
+          I'm an XR Developer and 3D Artist specializing in AR/VR/MR development, 3D modeling, animation, and game design.
+          With professional experience at KBR and Nokia, I build immersive visualization experiences, VR training environments,
+          and interactive 3D applications using Unreal Engine, Unity, and Blender. From realistic architectural visualizations
+          to defense training simulations, I craft immersive digital experiences that push boundaries.
         </p>
 
         <h3 className="text-xl font-semibold mb-6 text-foreground">Skills & Tools</h3>
