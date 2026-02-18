@@ -83,7 +83,7 @@ const ContactSection = () => {
           <a href="https://www.artstation.com/ghost1020032" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
             <ExternalLink className="w-4 h-4" /> ArtStation
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
+          <a href="https://www.linkedin.com/in/thirshath-morais-903926230" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
             <ExternalLink className="w-4 h-4" /> LinkedIn
           </a>
           <a href="mailto:thirshathmorais@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
