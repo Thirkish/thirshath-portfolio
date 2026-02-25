@@ -6,13 +6,16 @@ const skills = [
   { name: "Unity", icon: "🕹️" },
   { name: "3ds Max", icon: "🖥️" },
   { name: "Godot", icon: "🤖" },
-  { name: "ZBrush", icon: "🗿" },
-  { name: "Substance Painter", icon: "🎭" },
+  { name: "Houdini", icon: "🌋" },
+  { name: "TouchDesigner", icon: "✨" },
+  { name: "DaVinci Resolve", icon: "🎞️" },
+  { name: "Affinity", icon: "🖼️" },
   { name: "After Effects", icon: "🎬" },
   { name: "Photoshop", icon: "🖌️" },
   { name: "C#", icon: "💻" },
   { name: "AR/VR/MR", icon: "🥽" },
   { name: "Marvelous Designer", icon: "👗" },
+  { name: "AI", icon: "🧠" },
 ];
 
 const AboutSection = () => {
