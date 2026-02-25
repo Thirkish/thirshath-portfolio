@@ -8,8 +8,20 @@ import keyboard from "@/assets/portfolio/keyboard.webp";
 import character from "@/assets/portfolio/character-detail.webp";
 import donutsClose from "@/assets/portfolio/donuts-closeup.webp";
 import donutsStack from "@/assets/portfolio/donuts-stack.webp";
+import thirshath0000 from "@/assets/portfolio/thirshath-0000.webp";
+import thirshath2 from "@/assets/portfolio/thirshath-2.webp";
+import thirshath5 from "@/assets/portfolio/thirshath-5.webp";
+import thirshathCar0178 from "@/assets/portfolio/thirshath-car-0178.webp";
+import thirshathCar0179 from "@/assets/portfolio/thirshath-car-0179.webp";
+import thirshathNew0215 from "@/assets/portfolio/thirshath-new-0215.webp";
+import thirshathOldhouse from "@/assets/portfolio/thirshath-oldhouse.webp";
+import thirshathOldhouse4 from "@/assets/portfolio/thirshath-oldhouse4.webp";
+import thirshathOldhouse6 from "@/assets/portfolio/thirshath-oldhouse6.webp";
+import thirshathOldhouse13 from "@/assets/portfolio/thirshath-oldhouse13.webp";
+import thirshathReal from "@/assets/portfolio/thirshath-real.webp";
+import thirshathUntitled from "@/assets/portfolio/thirshath-untitled.webp";
 
-type Category = "All" | "3D Modeling" | "Animation" | "VFX" | "Character Design";
+type Category = "All" | "3D Modeling" | "Animation" | "VFX" | "Character Design" | "Environment" | "Automotive";
 
 interface Project {
   id: number;
@@ -28,9 +40,21 @@ const projects: Project[] = [
   { id: 4, title: "Character Sculpt", category: "Character Design", image: character, description: "A detailed character sculpt showcasing intricate surface details, beadwork, and stylized anatomy.", software: ["Blender", "ZBrush"] },
   { id: 5, title: "Macro Textures", category: "VFX", image: donutsClose, description: "Close-up macro study focusing on procedural textures, subsurface scattering, and material realism.", software: ["Blender", "Substance Painter"] },
   { id: 6, title: "Mech Keyboard", category: "3D Modeling", image: keyboard, description: "Product visualization of a mechanical keyboard with moody, cinematic lighting and shallow depth of field.", software: ["Blender"] },
+  { id: 7, title: "Scene Composition", category: "3D Modeling", image: thirshath0000, description: "A carefully composed 3D scene showcasing lighting techniques and spatial arrangement.", software: ["Blender"] },
+  { id: 8, title: "Stylized Render", category: "3D Modeling", image: thirshath2, description: "A stylized 3D render exploring unique artistic direction with bold shapes and color choices.", software: ["Blender"] },
+  { id: 9, title: "Concept Piece", category: "VFX", image: thirshath5, description: "A concept art piece blending visual effects with 3D modeling to create a striking composition.", software: ["Blender"] },
+  { id: 10, title: "Car Render – Front", category: "Automotive", image: thirshathCar0178, description: "A photorealistic automotive render showcasing detailed bodywork, reflections, and studio-quality lighting.", software: ["Blender"] },
+  { id: 11, title: "Car Render – Detail", category: "Automotive", image: thirshathCar0179, description: "An alternate angle of the automotive visualization highlighting material detail and paint shaders.", software: ["Blender"] },
+  { id: 12, title: "New Concept", category: "3D Modeling", image: thirshathNew0215, description: "A fresh concept render exploring new modeling techniques and procedural material workflows.", software: ["Blender"] },
+  { id: 13, title: "Old House – Exterior", category: "Environment", image: thirshathOldhouse, description: "A nostalgic old house exterior scene with weathered textures, warm lighting, and environmental storytelling.", software: ["Blender"] },
+  { id: 14, title: "Old House – Interior", category: "Environment", image: thirshathOldhouse4, description: "An interior view of the old house scene with carefully placed props and atmospheric lighting.", software: ["Blender"] },
+  { id: 15, title: "Old House – Detail", category: "Environment", image: thirshathOldhouse6, description: "A close-up detail shot of the old house showcasing material realism and surface imperfections.", software: ["Blender"] },
+  { id: 16, title: "Old House – Wide Shot", category: "Environment", image: thirshathOldhouse13, description: "A cinematic wide-angle shot of the old house environment with volumetric fog and natural lighting.", software: ["Blender"] },
+  { id: 17, title: "Realistic Portrait", category: "Character Design", image: thirshathReal, description: "A realistic portrait render focusing on skin shaders, subsurface scattering, and lifelike detail.", software: ["Blender", "ZBrush"] },
+  { id: 18, title: "Untitled Artwork", category: "3D Modeling", image: thirshathUntitled, description: "An experimental artwork exploring creative freedom in 3D space with abstract and stylized elements.", software: ["Blender"] },
 ];
 
-const categories: Category[] = ["All", "3D Modeling", "Animation", "VFX", "Character Design"];
+const categories: Category[] = ["All", "3D Modeling", "Environment", "Automotive", "VFX", "Character Design", "Animation"];
 
 const ProjectsGallery = () => {
   const [filter, setFilter] = useState<Category>("All");
@@ -58,11 +82,10 @@ const ProjectsGallery = () => {
             <button
               key={cat}
               onClick={() => setFilter(cat)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                filter === cat
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${filter === cat
                   ? "bg-primary text-primary-foreground"
                   : "bg-secondary text-secondary-foreground hover:bg-muted"
-              }`}
+                }`}
             >
               {cat}
             </button>
